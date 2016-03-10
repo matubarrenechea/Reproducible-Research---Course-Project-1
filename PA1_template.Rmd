@@ -48,6 +48,7 @@ All of the R code needed to reproduce the results (numbers, plots, etc.) in the 
 ## Load and transform data
 
 ```{r}
+setwd("C:/Users/barrenecheam/Desktop/Reproducible REsearch")
 library(data.table)
 library(ggplot2) # we shall use ggplot2 for plotting figures
 
