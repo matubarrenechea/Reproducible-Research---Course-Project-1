@@ -145,7 +145,7 @@ data_weekdays <- data_by_weekdays(rdata_fill)
 
 ## Plots
 
-```{r stepstakenperday, echo=TRUE}
+```{r, echo=TRUE}
 ggplot(steps_per_day, aes(x = steps)) +
        geom_histogram(fill = "gray", binwidth = 1000) +
         labs(title="Histogram of Steps per Day",
