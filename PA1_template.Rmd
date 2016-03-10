@@ -141,7 +141,7 @@ data_weekdays <- data_by_weekdays(rdata_fill)
 
 ## Plots
 
-```{r, echo=TRUE}
+```{r, fig.keep='all', echo=FALSE}
 ggplot(steps_per_day, aes(x = steps)) +
        geom_histogram(fill = "gray", binwidth = 1000) +
         labs(title="Histogram of Steps per Day",
@@ -154,14 +154,14 @@ ggplot(steps_per_interval, aes(x=interval, y=steps)) +
   theme_bw()
 ```
 
-```{r Histogram of Steps Taken per Day, echo=TRUE}
+```{r, fig.keep='all', echo=TRUE}
 ggplot(fill_steps_per_day, aes(x = steps)) +
   geom_histogram(fill = "gray", binwidth = 1000) +
   labs(title="Histogram of Steps per Day",
        x = "Steps per Day", y = "Number of times in a day") + theme_bw()
 ```
 
-```{r Steps per Interval, echo=TRUE}
+```{r, fig.keep='all', echo=TRUE}
 ggplot(data_weekdays, aes(x=interval, y=steps)) +
 geom_line(color="gray") +
 facet_wrap(~ dayofweek, nrow=2, ncol=1) +
